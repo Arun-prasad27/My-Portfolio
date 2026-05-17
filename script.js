@@ -1,4 +1,4 @@
-function toggleMenu(){
+/*function toggleMenu(){
     //stored in a menu varibale
     var menu = document.querySelector(".menu-links");
     //stored in a icon varibale
@@ -7,4 +7,12 @@ function toggleMenu(){
     menu.classList.toggle("open");
     //creating a class for icon
     icon.classList.toggle("open");
+}*/
+
+function toggleMenu() {
+  const navLinks = document.querySelector("#navLinks");
+  const hamburger = document.querySelector(".hamburger");
+
+  navLinks.classList.toggle("open");
+  hamburger.classList.toggle("open");
 }

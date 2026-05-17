@@ -8,59 +8,66 @@
     <link rel="stylesheet" href="mediaquery.css">
 </head>
 <body>
-    <!--Desktop nav-->
-    <nav id="desktop-nav">
-        <div class="logo">Arun</div>
-        <div>
-        <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#skill">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </div>
-    </nav>
+    <header class="site-header">
+  <nav class="navbar">
+    <a href="#" class="logo">Arun<span>.</span></a>
 
-    <!--hamburger menu for mobile-->
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skill">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
 
-    <nav id="hamburger-nav">
-        <div class="logo">
-            <img src="./assests/N1-removebg-preview.png" alt="mylogo">
-        </div>
-        <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="menu-links">
-              <li><a href="#about" onclick="toggleMenu()">About</a></li>
-              <li><a href="#skill" onclick="toggleMenu()">Skills</a></li>
-              <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-              <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-            </div>
-        </div>
-    </nav>
+    <button class="hamburger" onclick="toggleMenu()" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+</header>
 
     <!--Hero section-->
 
-    <section id="profile">
-        <div class="section__pic-container">
-            <img src="./assests/round me 2.png" alt="Arunprasad profile">
-        </div>
-        <div class="section__text">
-            <p class="section__text__p1">Hello, I'm</p>
-            <h1 class="title">Arun Prasad</h1>
-            <p class="section__text__p2">Frontend Developer</p>
-            <div class="btn-container">
-                <button class="btn btn-color-2" onclick="window.open('./assests/My CV 310326.pdf')">Download CV</button>
-                <button class="btn btn-color-1" onclick="location.href = './#contact'">Contact Info</button>
-            </div>
-            <div id="socials-container">
-                <img src="./assests/linkedin.png" alt="My linkedin Profile" class="linkedin icon" onclick="window.open('https://www.linkedin.com/in/arun-prasad-753471199/', '_blank')">
-                <img src="./assests/github.png" alt="My Github Profile" class="github icon" onclick="window.open('https://github.com/Arun-prasad27', '_blank')">
-            </div>
-        </div>
+    <section id="profile" class="hero-section">
+  <div class="hero-container">
+
+    <div class="hero-image">
+      <img src="./assests/round me 2.png" alt="Arun Prasad profile photo">
+    </div>
+
+    <div class="hero-content">
+      <p class="eyebrow">Hello, I'm</p>
+
+      <h1>Arun Prasad</h1>
+
+      <h2>Frontend Developer</h2>
+
+      <p class="hero-description">
+        I build responsive, modern web applications using React, JavaScript,
+        and clean UI architecture.
+      </p>
+
+      <div class="hero-actions">
+        <button class="btn primary-btn" onclick="location.href='./#projects'">
+          View Projects
+        </button>
+
+        <button class="btn secondary-btn" onclick="window.open('./assests/My CV 310326.pdf')">
+          Download CV
+        </button>
+      </div>
+
+      <div class="social-links">
+        <img src="./assests/linkedin.png" alt="LinkedIn profile"
+          onclick="window.open('https://www.linkedin.com/in/arun-prasad-753471199/', '_blank')">
+
+        <img src="./assests/github.png" alt="GitHub profile"
+          onclick="window.open('https://github.com/Arun-prasad27', '_blank')">
+      </div>
+    </div>
+
+  </div>
     </section>
 
     <!--about me-->
