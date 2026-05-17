@@ -659,51 +659,123 @@ section {
 
 /*contact*/
 
-#contact {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  height: 70vh;
+.contact-section {
+  padding: 6rem 1.5rem;
+  background: #ffffff;
 }
 
-.contact-info-upper-container {
-  display: flex;
-  justify-content: center;
+.contact-card {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  background: #111827;
+  color: white;
   border-radius: 2rem;
-  border: rgb(53, 53, 53) 0.1rem solid;
-  border-color: rgb(163, 163, 163);
-  background: (250, 250, 250);
-  margin: 2rem auto;
-  padding: 0.5rem;
+  padding: 4rem 2rem;
+  box-shadow: 0 30px 80px rgba(15, 23, 42, 0.18);
 }
 
-.contact-info-container {
+.contact-card .eyebrow {
+  color: #38bdf8;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+}
+
+.contact-card h2 {
+  font-size: clamp(2.2rem, 5vw, 4rem);
+  line-height: 1.1;
+  letter-spacing: -0.06em;
+  margin-bottom: 1rem;
+}
+
+.contact-text {
+  max-width: 640px;
+  margin: 0 auto 2rem;
+  color: #d1d5db;
+  line-height: 1.8;
+  font-size: 1rem;
+}
+
+.contact-actions {
   display: flex;
-  align-items: center;
   justify-content: center;
-  gap: 0.5rem;
-  margin: 1rem;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
 
-.contact-info-container p {
-  font-size: larger;
+.contact-btn {
+  padding: 0.95rem 1.4rem;
+  border-radius: 999px;
+  font-weight: 700;
+  transition: 0.3s ease;
 }
 
-.contact-icon {
-  cursor: default;
+.primary-contact {
+  background: white;
+  color: #111827;
 }
 
-.email-icon {
-  height: 2.5rem;
+.primary-contact:hover {
+  background: #38bdf8;
+  color: white;
+  transform: translateY(-3px);
+}
+
+.secondary-contact {
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.secondary-contact:hover {
+  border-color: #38bdf8;
+  color: #38bdf8;
+  transform: translateY(-3px);
 }
 
 /*footer*/
 
-footer {
-  height: 26vh;
-  margin: 0 1rem;
+.footer {
+  padding: 2.5rem 1.5rem;
+  background: #f8fafc;
 }
 
-footer p {
+.footer-container {
+  max-width: 1180px;
+  margin: 0 auto;
   text-align: center;
+}
+
+.footer-logo {
+  display: inline-block;
+  font-size: 1.7rem;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  margin-bottom: 1.2rem;
+}
+
+.footer-logo span {
+  color: #0077b5;
+}
+
+.footer-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  color: #374151;
+  font-weight: 500;
+}
+
+.footer-links a:hover {
+  color: #0077b5;
+}
+
+.footer p {
+  color: #6b7280;
+  font-size: 0.9rem;
 }

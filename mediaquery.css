@@ -200,3 +200,28 @@
     width: 100%;
   }
 }
+
+/* Contact section */
+/* Mobile */
+@media (max-width: 600px) {
+  .contact-section {
+    padding: 4.5rem 1.2rem;
+  }
+
+  .contact-card {
+    padding: 3rem 1.3rem;
+    border-radius: 1.5rem;
+  }
+
+  .contact-actions {
+    flex-direction: column;
+  }
+
+  .contact-btn {
+    width: 100%;
+  }
+
+  .footer-links {
+    gap: 1rem;
+  }
+}
