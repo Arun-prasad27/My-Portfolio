@@ -155,3 +155,48 @@
     font-size: 1.25rem;
   }
 }
+
+/* Projects section */
+/* Tablet */
+@media (max-width: 950px) {
+  .featured-project {
+    grid-template-columns: 1fr;
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-image,
+  .project-image.small {
+    min-height: 300px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .projects-section {
+    padding: 4.5rem 1.2rem;
+  }
+
+  .project-card {
+    padding: 0.9rem;
+  }
+
+  .project-image,
+  .project-image.small {
+    min-height: 220px;
+  }
+
+  .project-content {
+    padding: 0.8rem;
+  }
+
+  .project-actions {
+    flex-direction: column;
+  }
+
+  .project-actions button {
+    width: 100%;
+  }
+}

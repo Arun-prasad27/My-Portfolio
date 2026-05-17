@@ -205,77 +205,49 @@
 
     <!--projects-->
 
-    <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
-      <div class="skill-details-container">
-        <div class="project-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assests/project 1.png"
-                alt="Project 1"
-                class="project-img"
-              />
-            </div>
-            <h2 class="skill-sub-title project-title">
-              Memory Game <br />
-              <p style="font-size: 1rem">
-                (Interactive Javascript Memory Game)
-              </p>
-            </h2>
-            <p style="margin-bottom: 10px">
-              An interactive browser memory game built with JavaScript and
-              jQuery. Players repeat an increasingly complex color sequence,
-              demonstrating DOM manipulation, event handling, and dynamic game
-              logic.
+    <section id="projects" class="projects-section">
+      <div class="section-heading">
+        <p class="eyebrow">Browse my recent</p>
+        <h2>Projects</h2>
+      </div>
+
+      <div class="projects-container">
+        <article class="project-card featured-project">
+          <div class="project-image">
+            <img
+              src="./assests/project 2.2.png"
+              alt="SmartTask Pro dashboard preview"
+            />
+          </div>
+
+          <div class="project-content">
+            <span class="project-label">Featured Project</span>
+            <h3>SmartTask Pro</h3>
+            <p class="project-type">React Task Management App</p>
+
+            <p class="project-description">
+              A responsive task management application with authentication,
+              protected routes, Kanban-style workflow, REST API integration, and
+              user session handling.
             </p>
-            <div class="btn-container">
+
+            <div class="project-tags">
+              <span>React</span>
+              <span>REST API</span>
+              <span>Authentication</span>
+              <span>Protected Routes</span>
+              <span>Kanban UI</span>
+            </div>
+
+            <div class="project-actions">
               <button
-                class="btn btn-color-2 project-btn"
                 onclick="
-                  window.open(
-                    'https://github.com/Arun-prasad27/Mind-Games',
-                    '_blank',
-                  )
-                "
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-1 project-btn"
-                onclick="
-                  window.open(
-                    'https://arun-prasad27.github.io/Mind-Games/',
-                    '_blank',
-                  )
+                  window.open('https://smarttask-pro.vercel.app/', '_blank')
                 "
               >
                 Live Demo
               </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assests/project 2.2.png"
-                alt="Project 2"
-                class="project-img"
-              />
-            </div>
-            <h2 class="skill-sub-title project-title">
-              SmartTask Pro <br />
-              <p style="font-size: 1rem">(Full-stack - Frontend Focus)</p>
-            </h2>
-            <p style="margin-bottom: 10px">
-              A responsive task management application built with React
-              featuring authentication, protected routes, and a Kanban-style
-              workflow. The frontend integrates with a REST API backend to
-              manage tasks and user sessions.
-            </p>
-            <div class="btn-container">
               <button
-                class="btn btn-color-2 project-btn"
                 onclick="
                   window.open(
                     'https://github.com/Arun-prasad27/smarttask-pro',
@@ -283,67 +255,105 @@
                   )
                 "
               >
-                Github
-              </button>
-              <button
-                class="btn btn-color-1 project-btn"
-                onclick="
-                  window.open('https://smarttask-pro.vercel.app/', '_blank')
-                "
-              >
-                Live Demo
+                GitHub
               </button>
             </div>
           </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assests/project 3.png"
-                alt="Project 3"
-                class="project-img"
-              />
+        </article>
+
+        <div class="project-grid">
+          <article class="project-card">
+            <div class="project-image small">
+              <img src="./assests/project 1.png" alt="Memory Game preview" />
             </div>
-            <h2 class="skill-sub-title project-title">
-              Weather App <br />
-              <p style="font-size: 1rem">
-                (Backend Web App - Node.js & Express)
+
+            <div class="project-content">
+              <span class="project-label">JavaScript Project</span>
+              <h3>Memory Game</h3>
+
+              <p class="project-description">
+                Interactive browser game built with JavaScript and jQuery,
+                focusing on DOM manipulation, events, and game logic.
               </p>
-            </h2>
-            <p style="margin-bottom: 10px">
-              A Node.js and Express web application that fetches real-time
-              weather data from an external API. User input is processed on the
-              server and results are rendered dynamically using EJS templates.
-            </p>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="
-                  window.open(
-                    'https://github.com/Arun-prasad27/Weather-App',
-                    '_blank',
-                  )
-                "
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-1 project-btn"
-                onclick="
-                  window.open('https://weather-app-tzm6.onrender.com', '_blank')
-                "
-              >
-                Live Demo
-              </button>
+
+              <div class="project-tags">
+                <span>JavaScript</span>
+                <span>jQuery</span>
+                <span>DOM</span>
+              </div>
+
+              <div class="project-actions">
+                <button
+                  onclick="
+                    window.open(
+                      'https://arun-prasad27.github.io/Mind-Games/',
+                      '_blank',
+                    )
+                  "
+                >
+                  Live Demo
+                </button>
+                <button
+                  onclick="
+                    window.open(
+                      'https://github.com/Arun-prasad27/Mind-Games',
+                      '_blank',
+                    )
+                  "
+                >
+                  GitHub
+                </button>
+              </div>
             </div>
-          </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-image small">
+              <img src="./assests/project 3.png" alt="Weather App preview" />
+            </div>
+
+            <div class="project-content">
+              <span class="project-label">Backend Project</span>
+              <h3>Weather App</h3>
+
+              <p class="project-description">
+                Node.js and Express app that fetches real-time weather data from
+                an external API and renders results dynamically.
+              </p>
+
+              <div class="project-tags">
+                <span>Node.js</span>
+                <span>Express</span>
+                <span>API</span>
+                <span>EJS</span>
+              </div>
+
+              <div class="project-actions">
+                <button
+                  onclick="
+                    window.open(
+                      'https://weather-app-tzm6.onrender.com',
+                      '_blank',
+                    )
+                  "
+                >
+                  Live Demo
+                </button>
+                <button
+                  onclick="
+                    window.open(
+                      'https://github.com/Arun-prasad27/Weather-App',
+                      '_blank',
+                    )
+                  "
+                >
+                  GitHub
+                </button>
+              </div>
+            </div>
+          </article>
         </div>
       </div>
-      <img
-        src="./assests/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href = './#contact'"
-      />
     </section>
 
     <!--contact-->
