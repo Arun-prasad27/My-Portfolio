@@ -356,62 +356,94 @@ section {
 
 /* about */
 
-#about {
-  position: relative;
+.about-section {
+  padding: 6rem 1.5rem;
+  background: #f8fafc;
 }
 
-/*.about-details-container {
-  justify-content: center;
-  flex-direction: column;
-}*/
-
-.about-containers {
-  gap: 2rem;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
+.section-heading {
+  text-align: center;
+  margin-bottom: 4rem;
 }
 
-.about-containers,
-.about-details-container {
+.section-heading .eyebrow {
+  color: #0077b5;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.section-heading h2 {
+  font-size: clamp(2.2rem, 5vw, 3.8rem);
+  letter-spacing: -0.05em;
+  color: #111827;
+}
+
+.about-container {
+  max-width: 1180px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.about-image img {
+  width: min(340px, 100%);
+  border-radius: 2rem;
+  object-fit: cover;
+  box-shadow: 0 30px 70px rgba(15, 23, 42, 0.16);
+}
+
+.about-content {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  gap: 1.5rem;
 }
 
-.about-pic {
-  border-radius: 2rem;
-  margin-bottom: 15px;
-  width: 280px;
-}
-
-.arrow {
-  position: absolute;
-  border: 50%;
-  right: -5rem;
-  bottom: 2.5rem;
-  transition: all 0.3s ease-in-out;
-}
-
-.arrow:hover {
-  filter: drop-shadow(0 0 10px rgba(0, 119, 181, 0.7))
-    drop-shadow(0 0 20px rgba(0, 119, 181, 0.3));
-  transform: scale(1.1);
-}
-
-.details-container {
-  padding: 1.5rem;
-  flex: 1;
+.about-card {
   background: white;
-  border-radius: 2rem;
-  border: rgb(53, 53, 53) 0.1rem solid;
-  border-color: rgb(163, 163, 163);
-  text-align: center;
-  margin-bottom: 1rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 1.5rem;
+  padding: 1.6rem;
+  box-shadow: 0 20px 50px rgba(15, 23, 42, 0.06);
 }
 
-.section-container {
-  gap: 4rem;
-  height: 80%;
+.intro-card h3 {
+  font-size: clamp(1.5rem, 3vw, 2.1rem);
+  line-height: 1.25;
+  letter-spacing: -0.04em;
+  margin-bottom: 1rem;
+  color: #111827;
+}
+
+.about-card p {
+  color: #4b5563;
+  line-height: 1.8;
+  font-size: 1rem;
+}
+
+.about-card p + p {
+  margin-top: 1rem;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.card-label {
+  display: inline-block;
+  font-size: 0.85rem;
+  color: #0077b5;
+  font-weight: 700;
+  margin-bottom: 0.7rem;
+}
+
+.about-card h4 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: #111827;
 }
 
 /*skills section*/
